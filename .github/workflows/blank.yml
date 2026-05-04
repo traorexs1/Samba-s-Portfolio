@@ -1,0 +1,238 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { Mail, MapPin, Briefcase, GraduationCap, ExternalLink, Download, Sparkles, Users, PenLine, Trophy } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+export default function PortfolioWebsite() {
+  const skills = [
+    "Public Relations",
+    "Brand Outreach",
+    "Social Media Strategy",
+    "Event Planning",
+    "Child Development",
+    "Client Communication",
+    "NIL Partnerships",
+    "Creative Writing",
+  ];
+
+  const experience = [
+    {
+      title: "Lead Teacher",
+      org: "The Co-Op Family Center",
+      date: "Aug 2024 – Present",
+      details:
+        "Lead classroom routines, communicate with families, document children’s learning, and create child-led experiences inspired by the Reggio Emilia approach.",
+    },
+    {
+      title: "Account Manager",
+      org: "Oregon Accelerator NIL",
+      date: "2025 – Present",
+      details:
+        "Support brand outreach, athlete positioning, partnership pitches, and communication strategy for University of Oregon student-athletes.",
+    },
+    {
+      title: "Business Development / Outreach",
+      org: "RunClox",
+      date: "2025 – Present",
+      details:
+        "Help connect an innovative clock product with schools, organizations, athletes, and potential brand partners through strategic outreach.",
+    },
+  ];
+
+  const projects = [
+    {
+      icon: <Trophy className="h-6 w-6" />,
+      title: "NIL Brand Partnership Pitches",
+      text: "Created outreach angles and pitch messaging for athletes and brands across sports, lifestyle, wellness, and performance categories.",
+    },
+    {
+      icon: <Sparkles className="h-6 w-6" />,
+      title: "TRYI Bag Concept",
+      text: "Developed a soft-sided insulated grocery tote concept with wheels, foldability, and student-friendly convenience for everyday use.",
+    },
+    {
+      icon: <PenLine className="h-6 w-6" />,
+      title: "Classroom Documentation",
+      text: "Wrote warm, professional family-facing learning stories, daily reports, and child development reflections for an early childhood classroom.",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-slate-950 text-white">
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <a href="#home" className="text-xl font-bold tracking-tight">
+            Saran <span className="text-violet-400">Traore</span>
+          </a>
+          <div className="hidden gap-6 text-sm text-slate-300 md:flex">
+            <a href="#about" className="hover:text-white">About</a>
+            <a href="#experience" className="hover:text-white">Experience</a>
+            <a href="#projects" className="hover:text-white">Projects</a>
+            <a href="#contact" className="hover:text-white">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <section id="home" className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-violet-300">Public Relations • Sports Business • Education</p>
+          <h1 className="text-5xl font-extrabold leading-tight md:text-7xl">
+            Hi, I’m <span className="bg-gradient-to-r from-violet-300 to-fuchsia-400 bg-clip-text text-transparent">Saran</span>.
+          </h1>
+          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+            I’m a University of Oregon student and creative communicator with experience in public relations, NIL partnerships, early childhood education, and brand outreach.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Button asChild className="rounded-2xl bg-violet-500 px-6 py-6 text-base hover:bg-violet-600">
+              <a href="#projects">View My Work</a>
+            </Button>
+            <Button asChild variant="outline" className="rounded-2xl border-white/20 bg-white/5 px-6 py-6 text-base text-white hover:bg-white/10">
+              <a href="#contact">Contact Me</a>
+            </Button>
+          </div>
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.15 }}>
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-violet-500/20 to-fuchsia-500/10 p-8 shadow-2xl">
+            <div className="rounded-[1.5rem] bg-slate-900/80 p-8">
+              <p className="text-sm text-slate-400">Currently focused on</p>
+              <h2 className="mt-2 text-3xl font-bold">PR, partnerships, and meaningful storytelling.</h2>
+              <div className="mt-8 space-y-4 text-slate-300">
+                <div className="flex items-center gap-3"><MapPin className="h-5 w-5 text-violet-300" /> Eugene, Oregon</div>
+                <div className="flex items-center gap-3"><GraduationCap className="h-5 w-5 text-violet-300" /> University of Oregon</div>
+                <div className="flex items-center gap-3"><Briefcase className="h-5 w-5 text-violet-300" /> PR + Sports Business</div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      <section id="about" className="mx-auto max-w-6xl px-6 py-12">
+        <div className="grid gap-6 md:grid-cols-3">
+          <Card className="rounded-3xl border-white/10 bg-white/[0.04] text-white md:col-span-2">
+            <CardContent className="p-8">
+              <h2 className="text-3xl font-bold">About Me</h2>
+              <p className="mt-4 leading-8 text-slate-300">
+                I’m passionate about communication, relationship-building, and helping ideas come to life. My background blends classroom leadership, brand strategy, athlete marketing, and community-centered storytelling. I enjoy work that lets me be creative, organized, people-focused, and intentional.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="rounded-3xl border-white/10 bg-white/[0.04] text-white">
+            <CardContent className="p-8">
+              <Users className="h-8 w-8 text-violet-300" />
+              <h3 className="mt-5 text-2xl font-bold">What I Bring</h3>
+              <p className="mt-3 text-slate-300">Warm communication, strong initiative, creativity, and the ability to connect with people across different spaces.</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-12">
+        <h2 className="text-3xl font-bold">Skills</h2>
+        <div className="mt-6 flex flex-wrap gap-3">
+          {skills.map((skill) => (
+            <span key={skill} className="rounded-full border border-violet-300/20 bg-violet-300/10 px-4 py-2 text-sm text-violet-100">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      <section id="experience" className="mx-auto max-w-6xl px-6 py-12">
+        <h2 className="text-3xl font-bold">Experience</h2>
+        <div className="mt-6 grid gap-5">
+          {experience.map((item) => (
+            <Card key={item.title} className="rounded-3xl border-white/10 bg-white/[0.04] text-white">
+              <CardContent className="p-6">
+                <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+                  <div>
+                    <h3 className="text-xl font-bold">{item.title}</h3>
+                    <p className="text-violet-300">{item.org}</p>
+                  </div>
+                  <p className="text-sm text-slate-400">{item.date}</p>
+                </div>
+                <p className="mt-4 leading-7 text-slate-300">{item.details}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <section id="projects" className="mx-auto max-w-6xl px-6 py-12">
+        <h2 className="text-3xl font-bold">Featured Work</h2>
+        <div className="mt-6 grid gap-5 md:grid-cols-3">
+          {projects.map((project) => (
+            <Card key={project.title} className="rounded-3xl border-white/10 bg-white/[0.04] text-white transition hover:-translate-y-1 hover:bg-white/[0.07]">
+              <CardContent className="p-6">
+                <div className="text-violet-300">{project.icon}</div>
+                <h3 className="mt-5 text-xl font-bold">{project.title}</h3>
+                <p className="mt-3 leading-7 text-slate-300">{project.text}</p>
+                <a href="#contact" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-violet-300">
+                  Learn more <ExternalLink className="h-4 w-4" />
+                </a>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <section id="contact" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-r from-violet-500/20 to-fuchsia-500/10 p-8 text-center">
+          <h2 className="text-3xl font-bold">Let’s Connect</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-slate-300">
+            I’m open to opportunities in public relations, sports business, brand partnerships, student support, childcare leadership, and creative communications.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Button asChild className="rounded-2xl bg-violet-500 px-6 py-6 hover:bg-violet-600">
+              <a href="mailto:your.email@example.com"><Mail className="mr-2 h-4 w-4" /> Email Me</a>
+            </Button>
+            <Button asChild variant="outline" className="rounded-2xl border-white/20 bg-white/5 px-6 py-6 text-white hover:bg-white/10">
+              <a href="#"><Download className="mr-2 h-4 w-4" /> Resume</a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-slate-500">
+        © 2026 Samba Lamine Traore. Built with intention.
+      </footer>
+    </div>
+  );
+}
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
