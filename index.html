@@ -97,7 +97,7 @@
     .athlete--featured { grid-column: span 6; display: grid; grid-template-columns: 1fr 1.05fr; border-color: rgba(255, 255, 255, 0.18); background: linear-gradient(180deg, #161616 0%, #101010 100%); }
     .athlete--featured:hover { border-color: var(--text); transform: translateY(-4px); }
     .athlete__media { position: relative; aspect-ratio: 8.5 / 11; background: var(--bg-soft); overflow: hidden; }
-    .athlete--featured .athlete__media { aspect-ratio: auto; min-height: 420px; }
+    .athlete--featured .athlete__media { aspect-ratio: 4 / 5; min-height: 420px; }
     .athlete__media img { width: 100%; height: 100%; object-fit: contain; object-position: center; transition: transform 0.6s var(--ease); position: relative; z-index: 1; }
     .athlete--featured .athlete__media img { object-fit: contain; filter: contrast(1.05) saturate(0.9); }
     .athlete:hover .athlete__media img { transform: scale(1.02); }
@@ -264,12 +264,10 @@
 
           <article class="athlete athlete--featured reveal">
             <div class="athlete__media">
-              <span class="athlete__photo-placeholder">alex-harkey.png</span>
               <img src="assets/alex-harkey.png" alt="Alex Harkey" loading="lazy" onerror="this.style.display='none'" />
               <span class="athlete__badge athlete__badge--featured">At the Pros · LA Chargers · NFL</span>
             </div>
             <div class="athlete__body">
-              <p class="athlete__tag">Flagship Signing</p>
               <h3 class="athlete__name">Alex Harkey</h3>
               <p class="athlete__role">Football · Offensive Line</p>
               <ul class="athlete__highlights">
@@ -282,7 +280,6 @@
 
           <article class="athlete reveal">
             <div class="athlete__media">
-              <span class="athlete__photo-placeholder">elliott-cook.jpg</span>
               <img src="assets/elliott-cook.jpg" alt="Elliott Cook" loading="lazy" onerror="this.style.display='none'" />
               <span class="athlete__badge">Active</span>
             </div>
@@ -301,7 +298,6 @@
 
           <article class="athlete reveal">
             <div class="athlete__media">
-              <span class="athlete__photo-placeholder">pierre-mouesca.jpg</span>
               <img src="assets/pierre-mouesca.jpg" alt="Pierre Mouesca" loading="lazy" onerror="this.style.display='none'" />
               <span class="athlete__badge">Active</span>
             </div>
@@ -320,7 +316,6 @@
 
           <article class="athlete reveal">
             <div class="athlete__media">
-              <span class="athlete__photo-placeholder">samantha-neumeier.jpg</span>
               <img src="assets/samantha-neumeier.jpg" alt="Samantha Neumeier" loading="lazy" onerror="this.style.display='none'" />
               <span class="athlete__badge">Active</span>
             </div>
@@ -339,7 +334,6 @@
 
           <article class="athlete reveal">
             <div class="athlete__media">
-              <span class="athlete__photo-placeholder">reilly-cormier.jpg</span>
               <img src="assets/reilly-cormier.jpg" alt="Reilly Cormier" loading="lazy" onerror="this.style.display='none'" />
               <span class="athlete__badge">Active</span>
             </div>
@@ -371,12 +365,11 @@
         <article class="campaign campaign--deep reveal">
           <div class="campaign__deep-grid">
             <div class="campaign__deep-meta">
-              <span class="campaign__index">01 / 06</span>
               <span class="campaign__status campaign__status--pitch">Pitched</span>
             </div>
             <div class="campaign__deep-content">
               <h3 class="campaign__title campaign__title--xl">Space Age Fuel</h3>
-              <p class="campaign__lede">A $100K pitch tying a SpaceX-affiliated athlete to a regional fuel brand. I led on-site visits, photographed the locations, and built out a partnership blueprint mapping how the activation could come to life with the existing footprint — combining large-budget planning with high-stakes talent coordination.</p>
+              <p class="campaign__lede">Collaborated with fellow Oregon Accelerator members on a $100K NIL campaign proposal after Space Age Fuel approached the University of Oregon Athletic Department seeking an athlete partnership strategy. I visited Space Age Fuel's Eugene location on-site, photographed the space, and helped build out a partnership blueprint mapping how the activation could come to life through the brand's existing presence and customer environment.</p>
               <div class="campaign__deep-rows">
                 <div class="campaign__deep-row">
                   <span class="campaign__label">Role</span>
@@ -479,7 +472,7 @@
 
           <article class="skill-block skill-block--wide reveal">
             <h3 class="skill-block__cat">Industry Experience</h3>
-            <ul class="skill-block__list--exp skill-block__list">
+            <ul class="skill-block__list skill-block__list--exp">
               <li>
                 <strong>Oregon Ducks Women's Soccer</strong>
                 <span>Two years on staff under Coach Graeme Abel</span>
