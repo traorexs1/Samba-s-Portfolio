@@ -148,16 +148,15 @@
     @media (max-width: 880px) { .campaigns__grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 560px) { .campaigns__grid { grid-template-columns: 1fr; } }
     .skills { padding: clamp(100px, 14vw, 180px) 0; border-top: 1px solid var(--border); }
-    .skills__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(32px, 4vw, 56px); }
+    .skills__single { max-width: 720px; margin: 0 auto; }
     .skill-block { border-top: 1px solid var(--text); padding-top: 24px; }
-    .skill-block--wide { grid-column: 1 / -1; margin-top: clamp(16px, 3vw, 32px); }
+    .skill-block--wide { margin-top: clamp(40px, 5vw, 64px); }
     .skill-block__cat { font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); margin: 0 0 28px; }
-    .skill-block__list li { font-family: var(--font-display); font-size: clamp(22px, 2vw, 32px); line-height: 1.15; letter-spacing: 0.005em; color: var(--text); padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .skill-block__list li { font-family: var(--font-display); font-size: clamp(26px, 2.6vw, 38px); line-height: 1.15; letter-spacing: 0.005em; color: var(--text); padding: 18px 0; border-bottom: 1px solid var(--border); }
     .skill-block__list li:last-child { border-bottom: none; }
     .skill-block__list--exp li { font-family: var(--font-body); display: flex; flex-direction: column; gap: 4px; font-size: 16px; }
     .skill-block__list--exp strong { font-family: var(--font-display); font-weight: 400; font-size: clamp(22px, 2vw, 30px); letter-spacing: 0.005em; color: var(--text); text-transform: uppercase; }
     .skill-block__list--exp span { font-size: 13px; color: var(--text-muted); letter-spacing: 0.02em; }
-    @media (max-width: 880px) { .skills__grid { grid-template-columns: 1fr; } .skill-block--wide { margin-top: 16px; } }
     .footer { border-top: 1px solid var(--border); padding: 56px 0 40px; margin-top: 0; }
     .footer__inner { display: grid; grid-template-columns: 1.2fr 1fr auto; gap: 32px; align-items: center; }
     .footer__brand { display: flex; flex-direction: column; gap: 4px; }
@@ -435,35 +434,19 @@
     <section class="skills" id="skills" aria-label="Skills and experience">
       <div class="container">
         <header class="section-head">
-          <p class="section-eyebrow reveal">04 — Capabilities</p>
           <h2 class="section-title reveal">What<br/>I Bring.</h2>
         </header>
 
-        <div class="skills__grid">
+        <div class="skills__single">
 
           <article class="skill-block reveal">
-            <h3 class="skill-block__cat">NIL &amp; Brand Strategy</h3>
             <ul class="skill-block__list">
               <li>NIL Deal Development</li>
               <li>Brand Partnerships</li>
               <li>Athlete Brand Building</li>
-              <li>Outreach Strategy</li>
-            </ul>
-          </article>
-
-          <article class="skill-block reveal">
-            <h3 class="skill-block__cat">Account &amp; Project Management</h3>
-            <ul class="skill-block__list">
               <li>Managing D1 &amp; High-Profile Athletes</li>
               <li>Team Management</li>
               <li>Athlete Onboarding</li>
-            </ul>
-          </article>
-
-          <article class="skill-block reveal">
-            <h3 class="skill-block__cat">Operations &amp; Communication</h3>
-            <ul class="skill-block__list">
-              <li>Problem-Solving Under Pressure</li>
               <li>Multilingual: English, French, Bambara</li>
             </ul>
           </article>
@@ -473,7 +456,7 @@
             <ul class="skill-block__list skill-block__list--exp">
               <li>
                 <strong>Oregon Ducks Women's Soccer</strong>
-                <span>Two years on staff under Coach Graeme Abel</span>
+                <span>Team Manager · Two years on staff under Coach Graeme Abel</span>
               </li>
               <li>
                 <strong>ESPN College GameDay</strong>
