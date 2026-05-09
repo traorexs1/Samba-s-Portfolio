@@ -256,7 +256,7 @@
         <header class="section-head">
           <p class="section-eyebrow reveal">02 — Roster</p>
           <h2 class="section-title reveal">The Athletes<br/>I Manage.</h2>
-          <p class="section-lead reveal">A roster of student-athletes I represent at Oregon Accelerator — building personal brands, securing NIL partnerships, and connecting them with national and local opportunities.</p>
+          <p class="section-lead reveal">A roster of student-athletes I currently manage or have managed in the past at Oregon Accelerator. During my time with these athletes I have helped build personal brands, secured NIL partnerships, and connected them with national and local opportunities.</p>
         </header>
 
         <div class="athletes__grid">
@@ -315,7 +315,7 @@
           <article class="athlete reveal">
             <div class="athlete__media">
               <img src="assets/samantha-neumeier.jpg" alt="Samantha Neumeier" loading="lazy" onerror="this.style.display='none'" />
-              <span class="athlete__badge">Active</span>
+              <span class="athlete__badge">Transferred</span>
             </div>
             <div class="athlete__body">
               <p class="athlete__tag">Outgoing · Competitive · Gritty · Social</p>
@@ -371,155 +371,3 @@
                 <div class="campaign__deep-row">
                   <span class="campaign__label">Role</span>
                   <p>Lead pitch development, athlete &amp; talent coordination, on-site research</p>
-                </div>
-                <div class="campaign__deep-row">
-                  <span class="campaign__label">Outcome</span>
-                  <p>Pitched; did not launch.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <div class="campaigns__grid">
-
-          <article class="campaign reveal">
-            <div class="campaign__head">
-              <span class="campaign__index">02</span>
-              <span class="campaign__status">Executed</span>
-            </div>
-            <h3 class="campaign__title">Hollister</h3>
-            <p class="campaign__detail">Guided the athlete through the brand's content submission process — directing the merch photoshoot, reviewing and approving final images, and managing handoff to the brand.</p>
-          </article>
-
-          <article class="campaign campaign--coming reveal">
-            <div class="campaign__head">
-              <span class="campaign__index">03</span>
-              <span class="campaign__status campaign__status--soon">Coming Soon</span>
-            </div>
-            <h3 class="campaign__title">Will Leather Goods</h3>
-          </article>
-
-          <article class="campaign reveal">
-            <div class="campaign__head">
-              <span class="campaign__index">04</span>
-              <span class="campaign__status">Product Testing</span>
-            </div>
-            <h3 class="campaign__title">Bone Broth</h3>
-            <p class="campaign__detail">Coordinated product send-off to a roster athlete for testing — a pilot step toward a longer-term partnership pending feedback on the product.</p>
-          </article>
-
-          <article class="campaign reveal">
-            <div class="campaign__head">
-              <span class="campaign__index">05</span>
-              <span class="campaign__status">Executed</span>
-            </div>
-            <h3 class="campaign__title">IGYB</h3>
-            <p class="campaign__detail">Made sure the athlete stayed on top of signing the contract and executing all deliverables on time.</p>
-          </article>
-
-          <article class="campaign campaign--coming reveal">
-            <div class="campaign__head">
-              <span class="campaign__index">06</span>
-              <span class="campaign__status campaign__status--soon">Coming Soon</span>
-            </div>
-            <h3 class="campaign__title">Texas Roadhouse</h3>
-            <p class="campaign__detail">Launching Fall 2026.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="skills" id="skills" aria-label="Skills and experience">
-      <div class="container">
-        <header class="section-head">
-          <h2 class="section-title reveal">What<br/>I Bring.</h2>
-        </header>
-
-        <div class="skills__single">
-
-          <article class="skill-block reveal">
-            <ul class="skill-block__list">
-              <li>NIL Deal Development</li>
-              <li>Brand Partnerships</li>
-              <li>Athlete Brand Building</li>
-              <li>Managing D1 &amp; High-Profile Athletes</li>
-              <li>Team Management</li>
-              <li>Athlete Onboarding</li>
-              <li>Multilingual: English, French, Bambara</li>
-            </ul>
-          </article>
-
-          <article class="skill-block skill-block--wide reveal">
-            <h3 class="skill-block__cat">Industry Experience</h3>
-            <ul class="skill-block__list skill-block__list--exp">
-              <li>
-                <strong>Oregon Ducks Women's Soccer</strong>
-                <span>Team Manager · Two years on staff under Coach Graeme Abel</span>
-              </li>
-              <li>
-                <strong>ESPN College GameDay</strong>
-                <span>Event operations volunteer · Nov 2025</span>
-              </li>
-              <li>
-                <strong>Portland Trail Blazers</strong>
-                <span>Job shadow with Kevin Calabro · April 2024</span>
-              </li>
-            </ul>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="footer__name">Samba Lamine Traore</span>
-        <span class="footer__role">Account Manager · Oregon Accelerator</span>
-      </div>
-      <ul class="footer__links">
-        <li><a href="https://www.linkedin.com/in/sambalaminetraore/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
-        <li><a href="mailto:samba.traore3062@gmail.com">samba.traore3062@gmail.com</a></li>
-        <li><span>Eugene, OR</span></li>
-      </ul>
-      <p class="footer__year">© <span id="year"></span></p>
-    </div>
-  </footer>
-
-  <script>
-    (function () {
-      'use strict';
-      const revealEls = document.querySelectorAll('.reveal');
-      if ('IntersectionObserver' in window) {
-        const io = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                io.unobserve(entry.target);
-              }
-            });
-          },
-          { rootMargin: '0px 0px -10% 0px', threshold: 0.1 }
-        );
-        revealEls.forEach((el) => io.observe(el));
-      } else {
-        revealEls.forEach((el) => el.classList.add('is-visible'));
-      }
-      const nav = document.querySelector('.nav');
-      function onScroll() {
-        if (window.scrollY > 24) nav.classList.add('is-scrolled');
-        else nav.classList.remove('is-scrolled');
-      }
-      window.addEventListener('scroll', onScroll, { passive: true });
-      onScroll();
-      const yearEl = document.getElementById('year');
-      if (yearEl) yearEl.textContent = new Date().getFullYear();
-    })();
-  </script>
-</body>
-</html>
